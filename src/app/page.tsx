@@ -1,6 +1,5 @@
 "use client";
-/* import ActivityTab from "@/Components/ActivityTab";
-import RightSection from "@/Components/RightSection"; */
+
 import { useState } from "react";
 import User from "../../public/images (1).jpg";
 import { IoIosArrowDown } from "react-icons/io";
@@ -10,14 +9,15 @@ import { RxCross2 } from "react-icons/rx";
 import SideBar from "@/components/SideBar";
 import SearchSection from "@/components/SearchSection";
 import RightSection from "@/components/RightSection";
+import ActivityTab from "@/components/ActivityTab";
 
 
-/* const tabs = [
+const tabs = [
   { name: "Recent Added", content: <ActivityTab /> },
   { name: "In Progress", content: "Schedule Content" },
   { name: "In Review", content: "Overview Content" },
   { name: "Completed", content: "Chat Content" },
-]; */
+];
 export default function Home() {
   const [activeTab, setActiveTab] = useState(0);
   const [openmenu, setOpenmenu] = useState(false);
@@ -79,7 +79,7 @@ export default function Home() {
       {/* ------Tabs------------------------------ */}
       <div className="lg:flex items-baseline   xl:px-14 px-4 gap-12">
         <div className=" lg:w-1/2 w-full">
-        {/*   <div>
+          <div>
             <div className="flex xl:gap-[4.5rem] gap-4 md:mt-8 mt-4 overflow-x-scroll whitespace-nowrap no-scrollbar">
               {tabs.map((tab, index) => (
                 <button
@@ -96,7 +96,7 @@ export default function Home() {
               ))}
             </div>
             <div className="md:mt-8 sm:mt-4 ">{tabs[activeTab].content}</div>
-          </div> */}
+          </div>
         </div>
         <div className=" lg:w-1/2 w-full">
           <RightSection />
