@@ -10,6 +10,7 @@ import { FaLayerGroup } from "react-icons/fa";
 
 
 import Card from "./Card";
+import ChartComponent from "./ChartComponent";
 const userImage = [{ image: user1 }, { image: user2 }, { image: user3 }];
 const cards = [
   {
@@ -50,9 +51,9 @@ const ActivityTab = () => {
         </div>
       ))}
     </div>
-    {/* <div>
+    <div>
       <ChartComponent/>
-    </div> */}
+    </div>
   </div>
   );
 };
