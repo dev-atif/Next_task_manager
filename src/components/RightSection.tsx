@@ -7,6 +7,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import figma from "../../public/figma.png";
 import json from "../../public/jason.png";
 import VerticalCard from "./VerticalCard";
+import Card from "./Card";
 const RightSection = () => {
   const data = [
     {
@@ -107,7 +108,7 @@ const RightSection = () => {
               </span>
             </h1>
           </div>
-        {/*  <div className="my-3">
+         <div className="my-3">
          {Carddata.map((item, index) => (
             <div key={index} className="mt-3">
               <Card
@@ -120,7 +121,7 @@ const RightSection = () => {
               />
             </div>
           ))}
-         </div> */}
+         </div>
         </div>
       </div>
     </div>
