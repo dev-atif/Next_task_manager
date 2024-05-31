@@ -62,7 +62,7 @@ export default function Home() {
                   <SideBar />
                 </div>
               </div>
-              <div className="md:flex-1 ml-8 md:ml-0">
+              <div className="md:flex-1 ml-8 md:ml-0 md:mr-0 mr-3">
                <SearchSection/>
               </div>
               <div>
